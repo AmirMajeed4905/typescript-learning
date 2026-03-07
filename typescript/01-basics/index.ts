@@ -14,7 +14,7 @@ let price: number = 99.99
 // Boolean type - stores true or false
 let isActive: boolean = true
 
-console.log("Name:", name)
+console.log("Name:", user)
 console.log("Age:", age)
 console.log("Price:", price)
 console.log("Active:", isActive)
