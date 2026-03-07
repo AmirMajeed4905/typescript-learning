@@ -1,16 +1,71 @@
 // 01-basics/index.ts
 
+// ==================
+// 1. Basic Types
+// ==================
+
+// String type - stores text values
 let name: string = "Amir Majeed"
+
+// Number type - stores integers and decimals
 let age: number = 25
- // TypeScript mein type check hota hai, toh yeh allowed hai
+let price: number = 99.99
+
+// Boolean type - stores true or false
 let isActive: boolean = true
 
-// Ye lagao — terminal mein dikhega
 console.log("Name:", name)
 console.log("Age:", age)
+console.log("Price:", price)
 console.log("Active:", isActive)
 
-// Type check karo
-type UserRole = "admin" | "user"
+// ==================
+// 2. Union Type
+// ==================
+
+// Union - variable can hold more than one type
+let id: string | number = 101
+id = "ABC-101"   // both are valid
+console.log("ID:", id)
+
+// ==================
+// 3. Type Alias
+// ==================
+
+// Restricts value to only these options
+type UserRole = "admin" | "user" | "moderator"
 let role: UserRole = "admin"
-console.log("your Role is :", role )
+console.log("Role:", role)
+
+// ==================
+// 4. Arrays
+// ==================
+
+// Array of strings
+let skills: string[] = ["JavaScript", "TypeScript", "Node.js"]
+
+// Array of numbers
+let scores: number[] = [90, 85, 92]
+
+console.log("Skills:", skills)
+console.log("Scores:", scores)
+
+// ==================
+// 5. Any — avoid this!
+// ==================
+
+// 'any' removes type safety - avoid using it
+let something: any = "hello"
+something = 42       // no error but bad practice
+console.log("Any:", something)
+
+// ==================
+// 6. Null & Undefined
+// ==================
+
+// Variable that can be string or null
+let email: string | null = null
+console.log("Email before:", email)
+
+email = "amir@gmail.com"
+console.log("Email after:", email)
