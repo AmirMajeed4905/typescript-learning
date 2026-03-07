@@ -1,10 +1,12 @@
 {
-  "name": "01-basics",
+  "name": "typescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "basics": "ts-node 01-basics/index.ts",
+    "interfaces": "ts-node 02-interfaces/index.ts",
+    "functions": "ts-node 03-functions/index.ts"
   },
   "keywords": [],
   "author": "",

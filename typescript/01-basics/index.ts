@@ -5,7 +5,7 @@
 // ==================
 
 // String type - stores text values
-let name: string = "Amir Majeed"
+let user: string = "Amir Majeed"
 
 // Number type - stores integers and decimals
 let age: number = 25
