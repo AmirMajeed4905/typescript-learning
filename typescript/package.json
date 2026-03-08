@@ -6,7 +6,9 @@
   "scripts": {
     "basics": "ts-node 01-basics/index.ts",
     "interfaces": "ts-node 02-interfaces/index.ts",
-    "functions": "ts-node 03-functions/index.ts"
+    "functions": "ts-node 03-functions/index.ts",
+    "async": "ts-node 04-async-await/index.ts"
+
   },
   "keywords": [],
   "author": "",
