@@ -7,10 +7,12 @@ with the goal of becoming a job-ready Full Stack Developer.
 
 - [x] 01 - Basic Types
 - [x] 02 - Interfaces
-- [ ] 03 - Functions
+- [x] 03 - Functions
 - [ ] 04 - Async/Await
 - [ ] 05 - Generics
 - [ ] 06 - Express + TypeScript
+- [ ] OOP Concepts
+- [ ] DSA Problems
 
 ## What I'm Learning
 
@@ -30,18 +32,29 @@ with the goal of becoming a job-ready Full Stack Developer.
 - Interface with functions
 - Type vs Interface difference
 
-### 03 - Functions (coming soon)
+### 03 - Functions
+- Basic function types
+- Optional parameters
+- Default parameters
+- Arrow functions
+- Rest parameters
+- Function overloading
+
 ### 04 - Async/Await (coming soon)
 ### 05 - Generics (coming soon)
 ### 06 - Express + TypeScript (coming soon)
+### OOP Concepts (coming soon)
+### DSA Problems (coming soon)
 
 ## Tech Stack Goal
+
 | Technology | Status |
 |---|---|
 | TypeScript | 🔄 Learning |
 | Next.js | ⏳ Next |
 | NestJS | ⏳ Upcoming |
 | PostgreSQL + Prisma | ⏳ Upcoming |
+| Docker | ⏳ Upcoming |
 
 ## Why TypeScript?
 - Catches bugs before runtime
@@ -52,4 +65,3 @@ with the goal of becoming a job-ready Full Stack Developer.
 ## Author
 **Amir Majeed**
 [GitHub](https://github.com/AmirMajeed4905)
-
