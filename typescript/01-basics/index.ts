@@ -90,3 +90,60 @@ function reverseStringManual(str: string): string {
 
 console.log(reverseString("ali"))   // olleh
 console.log(reverseString("Amir"))    // rimA
+
+
+// ==================
+// Enums
+// ==================
+
+// 1. String Enum
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT"
+}
+
+const move = Direction.Up
+console.log("Direction:", move)  // UP
+
+// 2. Numeric Enum
+enum Status {
+  Pending,    // 0
+  Active,     // 1
+  Inactive,   // 2
+  Banned      // 3
+}
+
+console.log("Status:", Status.Active)    // 1
+console.log("Status:", Status.Pending)   // 0
+
+// 3. Real Life Example
+enum UserRole {
+  Admin = "ADMIN",
+  User = "USER",
+  Moderator = "MOD"
+}
+
+interface User {
+  name: string
+  role: UserRole  // sirf enum values allowed
+}
+
+const user: User = {
+  name: "Amir",
+  role: UserRole.Admin
+}
+
+console.log("User:", user)
+
+// 4. Enum in Function
+function getPermissions(role: UserRole): string {
+  if (role === UserRole.Admin) return "Full access"
+  if (role === UserRole.Moderator) return "Partial access"
+  return "Read only"
+}
+
+console.log(getPermissions(UserRole.Admin))      // Full access
+console.log(getPermissions(UserRole.User))       // Read only
+console.log(getPermissions(UserRole.Moderator))  // Partial access

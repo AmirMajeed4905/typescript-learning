@@ -4,7 +4,7 @@
 // 1. Promise Basic
 // ==================
 
-// Promise — future mein value aayegi
+// Promise 
 const myPromise: Promise<string> = new Promise((resolve, reject) => {
   const success = true
 
@@ -23,14 +23,14 @@ myPromise
 // 2. Async/Await
 // ==================
 
-// Async function hamesha Promise return karta hai
+// Async function always returns a Promise
 async function fetchUser(id: number): Promise<string> {
-  // Simulate API delay
+  // Simulate API 
   await new Promise(resolve => setTimeout(resolve, 1000))
   return `User ${id} found!`
 }
 
-// Async function call karo
+// Async function call 
 async function main() {
   const user = await fetchUser(1)
   console.log(user)
@@ -57,7 +57,7 @@ async function getData() {
     const data = await fetchData("https://api.example.com")
     console.log(data)
 
-    // Error wala case
+    // Error case
     const data2 = await fetchData("")
     console.log(data2)
   } catch (error) {
@@ -81,7 +81,7 @@ async function getPosts(): Promise<string[]> {
   return ["Post 1", "Post 2"]
 }
 
-// Promise.all — dono ek saath chalao
+// Promise.all
 async function loadPage() {
   const [user, posts] = await Promise.all([
     getUser(),
